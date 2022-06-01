@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-import {FileSizePipe} from '../file-size.pipe';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { FileSizePipe } from '../file-size.pipe';
 
 @NgModule({
   imports: [
@@ -15,6 +15,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage,FileSizePipe]
+  declarations: [
+    HomePage,
+    FileSizePipe
+  ]
 })
+
 export class HomePageModule {}
